@@ -1,0 +1,102 @@
+.container {
+    font-family: "Inter", sans-serif;
+}
+
+.buttoms-colors ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.buttoms-colors ul li {
+    margin-left: 7px;
+    float: inline-start;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 30px;
+    height: 30px;
+}
+
+#buttomblue{
+    background: #A6C5E7;
+}
+
+#buttomlightgray {
+    background: #E7E4E0;
+}
+
+#buttomblack{
+    background:#4B4B4D ;
+}
+
+#buttomgray{
+    background:#D3D8DA;
+}
+
+#buttomgreen {
+    background: #E1E5BC;
+}
+
+#buttompink {
+    background:#D68877 ;
+}
+
+#precio {
+font-style: bold;
+color: #353A49;
+}
+
+.buttom3 {
+font-size: 12px;
+color: #57626B;
+}
+
+.buttom5 {
+background-color:#1A73E8 ;
+border-style: hidden;
+color: white;
+}
+
+.content-box {
+display: grid;
+grid-template-columns: (1fr 1fr 1fr 1fr);
+}
+
+.content-box h2 {
+grid-column: span 4;
+border-bottom: 1px solid #353A49;
+}
+
+.content-box select {
+grid-column: span 1;
+}
+
+.content-box button {
+grid-column: span 3;
+}
+
+.content-box p {
+grid-column: span 4;
+}
+
+.content-box label {
+color: #1A73E8;
+}
+
+.container img {
+margin-right: 8px;
+}
+
+.imagen_producto img {
+width: 70%;
+}
+
+.imagen_producto {
+float: left;
+}
+
+.imagen_icono_flecha img {
+width: 20px;
+height: 20px;
+}

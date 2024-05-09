@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOOGLE-STORE</title>
     <link rel=StyleSheet href="styles-google.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="StyleSheet">
 </head>
 <body>
     <header>
@@ -19,25 +20,46 @@
        </nav>
     </header>
     <br>
-    <main>
-    <a href="">See products details </a>
-        <br>
-        <img alt="earbuds" src="earbuds_01.jpg" width="40%" height="40%">
-        <h1>Google Pixel Buds Pro</h1>
-        <p>Music & Sound</p>
-        <h3>229 €</h3>
-        <hr>
-        <p>Choose a color<p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    <div class="content-box">
-    <h2>229 €</h2>
-    <hr>
-    </div>
- </main> 
+    <div class="container">
+        <main>
+            <a href="">See products details </a>
+            <br>
+            <img id="imagen_icono_flecha" alt="earbuds" src="imagenes/Arrow.svg">
+            <div class="imagen_producto">
+                <img src="imagenes/earbuds_01.png">
+            </div>
+            <div>
+                <div class="descripcion_producto">
+                    <h1>Google Pixel Buds Pro</h1>
+                    <p id="buttom3">Music & Sound</p>
+                    <h3 id="precio">229 €</h3>
+                    <hr>
+                    <p class="buttom3">Choose a color<p>
+                    <div class="buttoms-colors">
+                        <ul>
+                            <li id="buttomblue">&nbsp;</li>
+                            <li id="buttomlightgray">&nbsp;</li>
+                            <li id="buttomblack">&nbsp;</li>
+                            <li id="buttomgray">&nbsp;</li>
+                            <li id="buttomgreen">&nbsp;</li>
+                            <li id="buttompink">&nbsp;</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="content-box">
+                    <h2>229 €</h2>
+                    <form>
+                        <select class="Buttom4">
+                            <option selected>1</option>
+                        </select>
+                    </form>
+                    <button class="buttom5"><b>Add to Cart</b></button>
+                    <p class="buttom3"><img src="imagenes/Delivery.svg"><b>Delivers 29 Apr to <label>08023</label></b></p>
+                </div>
+            </div>
+        </main> 
+    </div> 
 </body>
 </html>
