@@ -83,11 +83,10 @@ padding: 5px;
 
 .content-box {
 display: grid;
-grid-template-columns: (1fr 1fr 1fr 1fr);
+grid-template-columns: 1fr 1fr 1fr 1fr;
 background-color: #F8F9FA;
 padding: 20px;
 border-radius: 5px;
-margin-right: px;
 }
 
 .content-box select {
@@ -179,4 +178,33 @@ color: #353A49;
 padding-bottom: 25px;
 margin-bottom: 25px;
 border-bottom: 1px solid #353A49;
+}
+
+@media only screen and (max-width:500px ) {
+.imagen_producto img {
+    width: 100%;
+    padding: 0;
+}
+.iconos_earbuds {
+    display: none;
+}
+.container {
+    width: fit-content;
+}
+.content-box select {
+grid-column: span 2;
+}
+.content-box select {
+padding-left: 10px;
+margin-bottom: 10px;
+}
+
+.imagen_producto {
+margin: 0;
+}
+
+.imagenes_producto {
+margin: 0;
+}
+
 }
