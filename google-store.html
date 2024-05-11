@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOOGLE-STORE</title>
+    <link rel=StyleSheet href="styles-google.css">
     <link rel=StyleSheet href="styles-footer.css">
     <link rel=StyleSheet href="styles-header.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="StyleSheet">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#" class="menu">Phones</a></li>
-                    <li><a href="#"><b>Earbuds</b></a></li>
+                    <li><a href="#"><b id="a_select">Earbuds</b></a></li>
                     <li><a href="#" class="menu">Watches</a></li>
                     <li><a href="#" class="menu">Smart Home</a></li>
                     <li><a href="#" class="menu">Accessories</a></li>
@@ -28,30 +29,62 @@
             <img alt="Help" class="icono" src="imagenes/Help.svg">
             <img alt="Cart" class="icono" src="imagenes/Cart.svg">
             <img alt="Avatar" class="icono" src="imagenes/Avatar.svg">
+            <img alt="menu_ham" src="imagenes/menu.png" class="iconos" id="ham">
         </div>
     </header>
     <br>
-    <main>
-    <a href="">See products details </a>
-        <br>
-        <img alt="earbuds" src="earbuds_01.jpg" width="40%" height="40%">
-        <h1>Google Pixel Buds Pro</h1>
-        <p>Music & Sound</p>
-        <h3>229 €</h3>
-        <hr>
-        <p>Choose a color<p>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    <div class="content-box">
-    <h2>229 €</h2>
-    <hr>
-    </div>
- </main> 
- <footer>
+    <div class="container">
+        <main>
+            <div class="content-flecha">
+                <img id="imagen_icono_flecha" alt="earbuds" src="imagenes/Arrow.svg">
+                <label class="subtitles_menu"> See products details </label>
+            </div>
+            <br>
+            <div class="imagenes_producto">
+                <div class="iconos_earbuds">
+                    <ul>
+                        <li><img src="imagenes/earbuds_01.png"></li>
+                        <li><img src="imagenes/earbuds_02.png"></li>
+                        <li><img src="imagenes/earbuds_03.png"></li>
+                        <li><img src="imagenes/earbuds_04.png"></li>
+                    </ul>
+                </div>
+                <div class="imagen_producto">
+                    <img src="imagenes/earbuds_01.png">
+                </div>
+            </div>
+            <div class="content_products_descrip">
+                <div class="descripcion_producto">
+                    <h1>Google Pixel Buds Pro</h1>
+                    <p class="subtitles_menu">Music & Sound</p>
+                    <h2 id="precio">229 €</h2>
+                    <hr>
+                    <p class="subtitles_menu">Choose a color<p>
+                    <div class="buttoms-colors">
+                        <ul>
+                            <li id="buttomblue">&nbsp;</li>
+                            <li id="buttomlightgray">&nbsp;</li>
+                            <li id="buttomblack">&nbsp;</li>
+                            <li id="buttomgray">&nbsp;</li>
+                            <li id="buttomgreen">&nbsp;</li>
+                            <li id="buttompink">&nbsp;</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="content-box">
+                    <label id="monto">229 €</label>
+                        <select class="Buttom4">
+                            <option selected>1</option>
+                        </select>
+                    <button class="buttom5"><b>Add to Cart</b></button>
+                    <p class="buttom3"><img src="imagenes/Delivery.svg"><b>Delivers 29 Apr to <label>08023</label></b></p>
+                </div>
+            </div>
+        </main> 
+    </div> 
+    <footer>
     <div class="footer-content">
         <div class="social-media">
             <img alt="X" src="imagenes/SM-x.svg">
@@ -60,18 +93,18 @@
             <img alt="Youtube" src="imagenes/SM-youtube.svg">
             <img alt="Tik Tok" src="imagenes/SM-tiktok.svg">
         </div>
-        <img alt="Spain" src="imagenes/Spain.svg" class="Spain">
+        <img alt="Spain" src="imagenes/Spain.svg" class="Spain" id="bandera_desktop">
         <nav>
             <ul class="footer-list">
-                <li><a href="#">Spain</a></li>
+                <li id="pais_desktop"><a href="#">Spain</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Google Nest Commitment to Privacy</a></li>
                 <li><a href="#">Sales Terms</a></li>
                 <li><a href="#">Terms of Services</a></li>
             </ul>
         </nav>
+        <label id="pais_movil">Spain<img alt="Spain" src="imagenes/Spain.svg"></label>
     </div>
-</footer>
-
+    </footer>
 </body>
 </html>

@@ -41,3 +41,43 @@ footer {
 .Spain {
     margin-left: 120px;
 }
+#pais_movil {
+    display: none;
+}
+
+@media only screen and (max-width:500px ) {
+.footer-content {
+ flex-direction: column;
+}
+.footer-list li {
+display: block;
+text-align: center;
+}
+
+#pais_movil {
+display: block;
+font-family: "Inter", sans-serif;
+font-size: 8px;
+color: #57626B
+}
+
+#pais_desktop {
+display: none;
+}
+
+#pais_movil img {
+margin-left: 5px;
+}
+
+#bandera_desktop {
+display: none;
+}
+.social-media img {
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+.footer-content {
+    padding-bottom: 10px;
+}
+}

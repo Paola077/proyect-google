@@ -48,6 +48,22 @@ margin-right: 20px;
     width: 30px;
 }
 
-b {
+#a_select {
     color: #1a73e8;
+}
+
+#ham {
+width: 40px;
+height: 40px;
+display: none;
+}
+
+@media only screen and (max-width:500px ) {
+.nav {
+    display: none;
+}
+
+#ham {
+display: block;
+}
 }
